@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(104, 133, 66);
+        color: rgb(173, 30, 25);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-size: 2.5em;
+      }
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+      }
+      .myslides {
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Favorite Places in Baangladesh</h1>
+    <div class="carousel-container">
+      <img
+        class="myslides"
+        src="https://assets-news.housing.com/news/wp-content/uploads/2022/08/18174406/bangladesh-places-to-visit-FEATURE-compressed.jpg"
+        alt="Slde 1"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://thetravelerbd.com/wp-content/uploads/2024/03/image-2.jpeg"
+        alt="Slide 2"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://media.istockphoto.com/id/474259514/photo/boat-on-the-tropical-beach.jpg?s=612x612&w=0&k=20&c=1ersoGRQdPK6WLy498-QF33Bvi04VK__1G8IoufvR9E="
+        alt="Slide 3"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/95/Kaptai_Lake_%2819833365911%29.jpg"
+        alt="Slide 4"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://thetravelerbd.com/wp-content/uploads/2024/02/how-many-tourist-places-are-there-in-bandarban.jpg"
+        alt="Slide 5"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://ttg.com.bd/uploads/tours/destinations/6444446K.jpg"
+        alt="Slide 6"
+        height="300px"
+        width="500px"
+      />
+    </div>
+    <script>
+      var index = 0;
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {
+          ("");
+          x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+          index = 1;
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+      carousel();
+    </script>
+  </body>
+</html>
