@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: rgb(145, 143, 50);
+        color: rgb(114, 60, 16);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+        font-size: 2.5em;
+      }
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+      }
+      .myslides {
+        display: none;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Favorite Food</h1>
+    <div class="carousel-container">
+      <img
+        class="myslides"
+        src="https://img.taste.com.au/nm36Z471/taste/2019/07/pulled-beef-pizza-taste-152018-2.jpg"
+        alt="Slde 1"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvgElEBp_UiAkpEgN2KCUFOXVzg3SQ1vL9bQ&s"
+        alt="Slide 2"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+        alt="Slide 3"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://realfood.tesco.com/media/images/RFO-472x310-classic-chocolate-mousse-45482704-3988-4932-be66-91c87bb6152c-0-472x310.jpg"
+        alt="Slide 4"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://images.immediate.co.uk/production/volatile/sites/30/2022/09/Classic-Waffles-0ae28b2.jpg?resize=900%2C471"
+        alt="Slide 5"
+        height="300px"
+        width="500px"
+      />
+      <img
+        class="myslides"
+        src="https://img.taste.com.au/uMAyK77R/taste/2024/08/quick-mongolian-beef-fried-rice-in-bowl-201667-1.jpg"
+        alt="Slide 6"
+        height="300px"
+        width="500px"
+      />
+    </div>
+    <script>
+      var index = 0;
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("myslides");
+        for (i = 0; i < x.length; i++) {
+          ("");
+          x[i].style.display = "none";
+        }
+        index++;
+        if (index > x.length) {
+          index = 1;
+        }
+        x[index - 1].style.display = "block";
+        setTimeout(carousel, 2000);
+      }
+      carousel();
+    </script>
+  </body>
+</html>
