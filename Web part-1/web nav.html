@@ -36,9 +36,111 @@
   <body>
     <div class="topnav">
       <a class="active" href="#home">Home</a>
-      <a href="#">About_Us</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact_Us</a>
+
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contactus.html">Contact Us</a>
+      <a href="Aboutus.html">About Us</a>
     </div>
+    <center>
+      <section>
+        <img
+          class="mySlides"
+          src="https://www.foodandwine.com/thmb/DI29Houjc_ccAtFKly0BbVsusHc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.jpg"
+          style="height: 500px; width: 100%"
+        />
+        <img
+          class="mySlides"
+          src="https://secretrecipebd.com/wp-content/uploads/2021/07/pizza_tuna-olive.jpg"
+          style="height: 500px; width: 100%"
+        />
+      </section>
+      <button
+        style="
+          margin-top: 20px;
+          padding: 12px 32px;
+          font-size: 18px;
+          background-color: #1affa3;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+      >
+        Order Now
+      </button>
+      <center>
+        <h1 style="color: #1affa3; font-size: 36px; margin-top: 20px">
+          Welcome to Our Restaurant
+        </h1>
+      </center>
+    </center>
+    <img
+      src="https://www.allrecipes.com/thmb/Vam39ni2Q7J3VQycgS85NkLpSMQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-JF-27072-Mexican-Rice-ddmfs-2x1-831a9a4a83074cdf8c9150c361c82281.jpg"
+      alt="Mexican Rice"
+      width="300px"
+      height="200px"
+      style="margin-top: 20px"
+    />
+    <p style="font-size: 18px; color: #333; margin-top: 8px">Price: $3.99</p>
+    <img
+      src="https://images.unsplash.com/photo-1504674900247-0877df9cc836"
+      alt="Pizza"
+      width="300px"
+      height="200px"
+      style="margin-top: 20px"
+    />
+    <p style="font-size: 18px; color: #333; margin-top: 8px">Price: $8.99</p>
+    <img
+      src="https://www.foodandwine.com/thmb/pwFie7NRkq4SXMDJU6QKnUKlaoI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f.jpg"
+      alt="Burger"
+      width="300px"
+      height="200px"
+      style="margin-top: 20px"
+    />
+    <p style="font-size: 18px; color: #333; margin-top: 8px">Price: $5.49</p>
+    <img
+      src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc"
+      alt="Pasta"
+      width="300px"
+      height="200px"
+      style="margin-top: 20px"
+    />
+    <p style="font-size: 18px; color: #333; margin-top: 8px">Price: $6.99</p>
+    <img
+      src="https://images.immediate.co.uk/production/volatile/sites/30/2014/05/Epic-summer-salad-hub-2646e6e.jpg"
+      alt="Salad"
+      width="300px"
+      height="200px"
+      style="margin-top: 20px"
+    />
+    <p style="font-size: 18px; color: #333; margin-top: 8px">Price: $4.25</p>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+    <footer
+      style="
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 16px 0;
+        margin-top: 40px;
+      "
+    >
+      &copy; 2024 Our Restaurant. All rights reserved.
+    </footer>
   </body>
 </html>
